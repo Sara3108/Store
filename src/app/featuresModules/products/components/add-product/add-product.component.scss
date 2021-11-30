@@ -1,0 +1,12 @@
+.form-container {
+    width: 500px;
+    margin: auto;
+
+    .form-group, .submit-btn{
+        padding: 10px;
+    }
+
+    .submit-btn button{
+        width: 130px;
+    }
+}

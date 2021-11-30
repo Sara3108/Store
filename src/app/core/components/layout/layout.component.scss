@@ -1,0 +1,20 @@
+h1 {
+  padding: 100px 0;
+  color: #ffffff;
+}
+
+.routers-div {
+  width: 360px;
+  margin: auto;
+  a {
+    background-color: #8c8d8e;;
+    border-color: #8c8d8e;;
+    color: #ffffff;
+  }
+}
+.background {
+  background-image: url(../../../../assets/images/bg.jpg);
+  height: calc(100vh - 60px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,28 @@
+.nav-background{
+    direction: ltr;
+    height: 60px;
+    background: #ED9329;
+
+    .navbar-brand{
+        color: #ffffff;
+        text-shadow: 0 1px 0 #eeecef;
+        padding: 5px 15px;
+    }
+    .nav-item{
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 5px 10px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .nav-container{
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-link{
+        color: #ffffff;
+    }
+}

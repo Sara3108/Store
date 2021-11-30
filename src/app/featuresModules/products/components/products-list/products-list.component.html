@@ -1,0 +1,33 @@
+<div class="container card-container pt-5" *ngIf="!isLoading; else loader">
+  <div class="d-flex card-flex" *ngIf="Products; else noData">
+    <div class="card" *ngFor="let product of Products">
+      <img
+        class="card-img-top"
+        src="{{ product?.image }}"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ product?.title }}</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <span [class]="'cate ' + product?.category?.slice(0, 3) + 'Cate'">{{
+            product?.category
+          }}</span>
+        </li>
+        <li class="list-group-item">
+         <a class="btn btn-primary" [routerLink]="['/products/details', product.id]">Show Details</a>
+        </li>
+        <li class="list-group-item">{{ product?.price }}$</li>
+      </ul>
+    </div>
+  </div>
+
+  <ng-template #noData>
+    <div class="no-data">there is no data</div>
+  </ng-template>
+</div>
+
+<ng-template #loader>
+  <app-loader></app-loader>
+</ng-template>

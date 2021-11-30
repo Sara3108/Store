@@ -1,0 +1,45 @@
+.card-container {
+  padding: 30px 0;
+  .card-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    margin: 15px;
+    width: 300px;
+
+    .card-title {
+      color: #496a82;
+      font-weight: 600;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      padding: 1rem 3rem;
+    }
+
+    .card-text {
+      cursor: pointer;
+    }
+  }
+}
+
+.cate {
+  font-weight: bold;
+}
+
+.womCate {
+  color: #e16385;
+}
+.menCate {
+  color: #269657;
+}
+
+.jewCate {
+  color: #ec8c00;
+}
+
+.eleCate {
+  color: #235378;
+}

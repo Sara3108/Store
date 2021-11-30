@@ -1,0 +1,52 @@
+<div class="container pt-5">
+    <h2>Add New Product</h2>
+ <div class="form-container">
+    <form [formGroup]="productForm" (ngSubmit)="submitForm()">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            id="title"
+            type="text"
+            class="form-control"
+            formControlName="title"
+          />
+        </div>
+    
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input
+            id="price"
+            type="number"
+            class="form-control"
+            formControlName="price"
+          />
+        </div>
+    
+        <div class="form-group">
+          <label for="category">Category</label>
+          <input
+            id="category"
+            type="text"
+            class="form-control"
+            formControlName="category"
+          />
+        </div>
+    
+        <div class="form-group">
+          <label for="desc">Describtion</label>
+          <textarea
+            class="form-control"
+            id="desc"
+            rows="3"
+            formControlName="description"
+          ></textarea>
+        </div>
+    
+        <div class="submit-btn pt-4 d-flex justify-content-between">
+          <button [disabled]="isLoading" type="submit" class="btn btn-primary">Add</button>
+          <span class="text-success" *ngIf="success">Added Successfully!</span>
+          <span class="text-danger" *ngIf="error">Error Happen!</span>
+        </div>
+      </form>
+ </div>
+</div>
